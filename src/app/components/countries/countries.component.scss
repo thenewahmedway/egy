@@ -1,0 +1,526 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    background: #fbf5e285;
+    padding-top: 70px;
+}
+
+/*************************************** start header *****************/
+header{
+    padding-bottom: 70px;
+    background: url('../../../assets/imgs/countries/back2.jpg');
+    background-size: cover;
+    position: relative;
+    .info{
+        padding: 120px 50px 0 50px;
+        position: relative;
+        z-index:9;
+        @media(max-width:767px){
+            width:100%;
+            text-align: center;
+            padding: 100px 15px 0 15px;
+        }
+        @media(max-width:1199px){
+            padding: 100px 15 0 15px;
+        }
+        h2{
+            font-family: 'Hind Siliguri', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 46px;
+            @media(max-width:767px){font-size: 35px !important;  }
+            @media(max-width:1199px){font-size: 40px; }
+        }
+        .date{
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p{
+            margin:7px 0;
+            font-size: 18px;
+            text-transform: capitalize;
+            font-weight: 400;
+            color:#444;
+            @media(max-width:1199px){ font-size: 16px}
+            @media(max-width:370px){ font-size: 14px}
+            &:first-of-type{
+                margin-top:30px;
+            }
+        }
+        button{
+            background:#E8505B;
+            border:2px solid #E8505B;
+            color:#fff;
+            text-transform: capitalize;
+            font-size: 18px;
+            cursor: pointer;
+            @media(max-width:1199px){padding :10px 25px ;}
+            &:hover{
+                color:#fff;
+                background: none;
+                border:1px solid #222;
+                &::before{
+                    background:#222 !important;
+                }
+            }
+        }
+    }
+    .cont_img{
+        height: 600px;
+        width: 90%;
+        position: relative;
+        img{
+            width:100%;
+            height:100%;
+        }
+        @media(max-width:991px){
+            width:90% !important;
+            margin:1px auto;
+        }
+        @media(max-width:1199px){
+            width:400px;
+            height: 450px;
+            top:30px;
+        }
+        img{
+            width:100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+    .coronaimgs{
+        .small_img{
+            position: absolute;
+            width:50px;
+            height: 50px;
+            top: 381px;
+            left: 78px;
+            z-index: 2;
+            @media(max-width:1200px){
+                top: 295px;
+                left: 72px;
+                width:30px;
+                height: 30px;
+            }
+            img{
+                width:100%;
+                height: 100%;
+                animation: rotate  20s linear infinite;
+            }
+        }
+        .big_img{
+            position: absolute;
+            width:150px;
+            height: 150px;
+            img{
+                width:100%;
+                height: 100%;
+                animation: rotate  28s linear infinite;
+            }
+        }
+        .big_one{
+            top: -7px;
+            left: 333PX;
+            z-index: 0;
+        }
+        .big_two{
+            top: 24px;
+            left: -744px;
+        }
+        .big_three{
+            bottom: -65px;
+            left: -638px;
+        }
+    }
+    .arrow{
+        position: absolute;
+        z-index:9;
+        bottom:60px;
+        left:50%;
+        i{
+            font-size:40px;
+            color:#E8505B;
+            animation: arrowupdown 1s ease-in-out infinite;
+        }
+    }
+    .overlay{
+        position: absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        background:#f5f3ebeb;
+    }
+}
+/*************************************** end header *****************/
+
+
+
+
+
+
+
+
+/*************************************** start select *****************/
+.main{
+    padding:100px 0 ;
+    .main_title{
+        h2{margin:0;}
+        @media(max-width:767px){
+            h2{
+                font-size:30px;
+            }
+        }
+    }
+
+    // start ng-select  
+   .control-section{
+       margin:1px auto;
+       width:350px;
+       position: relative;
+       #content{
+        margin: 0px auto;
+         width:350px;
+          padding-top: 40px;
+          @media(max-width:500px){
+              width:270px;
+          }
+       }
+       .e-input-group{
+          font-size: 18px;
+          color:#E8505B;
+        }
+        .e-input-group-icon{
+            color: #E8505B;
+        }
+        img{
+            position: absolute;
+            right: -77px;
+            top: 38px;
+            @media(max-width:500px){
+                width:25px;
+                height: 40px;
+                right: 5px;
+                top:50px
+            }
+        }
+   }
+    //end ng-select 
+
+    
+    /*************** start stats  *****************/
+    .countries{
+       
+        .main_col{
+            padding:15px 30px;
+        }
+        .new,.all{
+            position: relative;
+            overflow: hidden;
+            padding:75px 15px;
+            border-radius: 20px;
+            box-shadow: 0px 1px 12px 2px #99999969;
+            background:linear-gradient(81deg, #fdfaf054, #e2ddce);
+            .icon{
+                position: absolute;
+                top: 10px;
+                left: 4px;
+                color: #ffe000;
+                font-size: 20px;
+            }
+            .all_new{
+                position: absolute;
+                top: 23px;
+                left: 12px;
+                font-size: 20px;
+                transform: rotate(-45deg);  
+            }
+
+            &::before{
+                content: '';
+                position: absolute;
+                border-left: 64px solid #4a432c3d;
+                border-bottom: 64px solid transparent;
+                border-top: 64px solid transparent;
+                transform: rotate(-135deg);
+                left: -10px;
+                top: -41px;
+            }
+
+
+            .item{
+                text-align: center;
+                margin:20px 0;
+                img{
+                    width:70px;
+                    height: 70px;
+                }
+            }
+        
+        } 
+        .all{
+            .icon{
+                color: #E8505B;
+            }
+        }
+
+        /*
+        .row{
+            background: #fff;
+            padding:40px 0;
+            border-radius: 10px;
+            box-shadow: 6px 4px 17px -4px #8888883d;
+            position: relative;
+            top:50px;
+            .col-6{
+                @media(max-width:767px){
+                    margin-top:100px;
+                }
+            }
+            .col-6:not(:first-child){
+                .item{
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 1px;
+                        height: 46px;
+                        top: 5px;
+                        background: #5555552e;
+                    }
+                }
+            }
+            .col-6:nth-child(3){
+                @media(max-width:767px){
+                    .item{
+                        &::after{
+                            background: none;
+                        }
+                    }
+                }
+            }
+            .item{
+                img{
+                    width:70px;
+                    height: 70px;
+                    position: absolute;
+                    top:-80px;
+                    left:50%;
+                    margin-left: -35px;
+                }
+            }
+        }
+        */
+    }
+    /**************** end stats **************/
+
+
+    /**************** start if you *********/
+    .if_you{
+        i{
+            font-size: 27px;
+            color:#E8505B; 
+            position: relative;
+            top:2px;
+        }
+        h3{
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: capitalize;
+            @media(max-width:767px){
+                text-align: center;
+                line-height: 1.6;
+            }
+            a{
+                color:#E8505B;
+                cursor: pointer;
+                animation: showhide 2s ease-in-out infinite;
+            }
+        }
+    }
+    /**************** end if you ***********/
+    /**************** start table **************/
+    table{
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-top:50px;
+        width:100%;
+        border-bottom:1px solid #777;
+        overflow: scroll;
+        ::-webkit-scrollbar {/* width */
+            width: 16px;
+        }
+        ::-webkit-scrollbar-track {  /* Track */
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 2px;
+        }
+        ::-webkit-scrollbar-thumb {   /* Handle */
+            background: #f2f2f2; 
+            border-radius: 10px;
+            &:hover{
+                background: #b30000;
+            
+            }
+        }
+    
+    
+        thead, tbody{
+            display:block;
+            width:100%;
+            tr{
+                display:flex;
+                align-items: stretch;
+                width:100%;
+                &:nth-child(even) {background: #4545454d};
+                td{
+                    position: relative;
+                    padding:15px;
+                    border-top:1px solid #1d141463;
+                    width:25%;
+                    text-align: center;
+                    @media(max-width:650px){padding:5px;}
+                }
+            }
+        }
+        thead{
+            color:#fff;
+            background:#454545;
+            font-size:17px;
+            @media(max-width:650px){font-size:13px}
+            tr{
+                width:98%;
+                td{
+                    border:1px solid #99999905 !important;
+                }
+            }
+        }
+        tbody{
+            max-height: 300px;
+            overflow-Y: scroll;
+            background:#303030;
+            font-size:14px;
+            @media(max-width:650px){font-size:12px !important}
+            td{
+                color:#f1f1f1;
+            }
+        }
+    }
+    /**************** end table **************/
+}
+/*************************************** end main  *****************/
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************/
+/*************************************** start my framwork  *****************/
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes updown{//updown animation 
+    0%{
+        bottom:5%;
+    }
+    50%{
+        bottom:50%;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+
+@keyframes arrowupdown{
+    0%{
+        margin-bottom: 10px;
+    }
+    50%{
+        margin-bottom: 20px;
+    }
+    100%{
+        margin-bottom: 10px;
+    }
+}
+
+@keyframes showhide{
+    0%{
+        opacity: .6;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.alert{
+    padding: 3px 15px ;
+    background:#ff4f5b17;
+    color:#E8505B;
+    border-radius:16px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.main_button{
+    outline: none;
+    background: none;
+    margin-top:30px;
+    padding:20px 50px;
+    border-radius: 40px;
+    overflow: hidden;
+    border:2px solid #E8505B;
+    color:#222;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    &:hover{
+        color:#fff;
+        &::before{
+            width: 100%;
+        }
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width:0%;
+        height:100%;
+        top:0;
+        left:0;
+        background:#E8505B;
+        z-index: -1;
+        transition: all .4s ease-in-out;
+    }
+}
+
+
+.main_title{
+    h2{
+        color:#222;
+        font-size: 40px;
+        font-weight:bold;
+        text-transform: capitalize;
+        font-family: 'Hind Siliguri', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Titillium Web', sans-serif;
+    }
+}
+/*************************************** end my framwork   *****************/

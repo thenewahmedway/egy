@@ -1,0 +1,167 @@
+<body dir='{{"home.dir" | translate }}' class='{{"home.textalign" | translate }}'>
+    <!------------------------------------ start  header ---------------->
+    <header>
+        <div class="row">
+            <div class="col-12 col-lg d-lg-none">
+                <div class="cont_img">
+                    <img src="assets/imgs/countries/world.png" alt="persone img">
+                </div>
+                <div class="coronaimgs">
+                    <div class="small_img"> <img src="assets/imgs/header/redvir.png" alt='small corona'>  </div>
+                    <div class="big_img big_one">   <img src="assets/imgs/header/grayvir.png" alt='small corona'> </div>
+                    <div class="big_img big_two">   <img src="assets/imgs/header/grayvir.png" alt='small corona'> </div>
+                    <div class="big_img big_three">   <img src="assets/imgs/header/greenvir.png" alt='small corona'> </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg">
+                <div class="info">
+                    <span class='alert'>  {{"countries.header.info.alert" | translate }}         </span>
+                    <h2>                  {{"countries.header.info.h2" | translate }}            </h2>
+                    <p class='date'>      {{todayDate | date}}                                    </p>
+                    <p class='lead'>      {{"countries.header.info.lead_one" | translate }}       </p>
+                    <p class='lead'>       {{"countries.header.info.lead_two" | translate }}      </p>
+                    <button class='main_button' href="#select" pageScroll>  {{"countries.header.info.button" | translate }}  </button>
+                </div>
+            </div>
+            <div class="col-12 col-lg d-none d-lg-block">
+                <div class="cont_img">
+                    <img src="assets/imgs/countries/world.png" alt="persone img">
+                </div>
+                <div class="coronaimgs">
+                    <div class="small_img"> <img src="assets/imgs/header/redvir.png" alt='small corona'>  </div>
+                    <div class="big_img big_one">   <img src="assets/imgs/header/grayvir.png" alt='small corona'> </div>
+                    <div class="big_img big_two">   <img src="assets/imgs/header/grayvir.png" alt='small corona'> </div>
+                    <div class="big_img big_three">   <img src="assets/imgs/header/grayvir.png" alt='small corona'> </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow d-none d-md-block">
+            <i class="fa fa-angle-double-down"></i>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <!------------------------------------------------------------- end header ---------------->
+
+  
+    <!----------------------------------------------------------- start select ---------------->
+    <section class="main"  id='select'>
+            <div class='main_title text-center'>
+                <span class="alert">{{"countries.select.info.alert" | translate }}   </span>
+                <h2> {{"countries.select.info.h2" | translate }}</h2>
+            </div>
+
+            <!--------------------------- start selection ------->
+                <div class="control-section select_container" > 
+                    <div id='content'>
+                        <ejs-dropdownlist class="text-right"  #select_input (change)='countryname(select_input.value)'  id='diacritics' [dataSource]='data' [allowFiltering]='true' [ignoreAccent]='true' placeholder='Select your country'
+                            filterBarPlaceholder='write country'>
+                        </ejs-dropdownlist>
+                        <img *ngIf='show_img'  src="https://www.countryflags.io/{{countryCode}}/flat/64.png"> 
+                    </div>
+                </div>
+              
+            <!------------------------------ end selection ------->
+             <br>
+             <br>
+            <!------------------------------------------------ start stats ------------>
+            <div class="countries"> 
+                <div class="container">
+                    <div class="row main_row" > <!--- start main row -->
+                        <!------------- start new stats -->
+                        <div class="col-md main_col">
+                            <div class='new row text-center'>
+                                <h4 class="all_new">  {{"countries.select.stats.new" | translate }} </h4>
+                                <i class="fa fa-star icon"></i>
+                                <div class="col">
+                                    <div class='item'>
+                                        <img src="assets/imgs/header/redvir.png" alt='lav img'>
+                                        <h2> {{NewConfirmed}} </h2>
+                                        <p>   {{"countries.select.stats.new_conf" | translate }} </p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class='item'>
+                                        <img src="assets/imgs/header/greenvir.png" alt='lav img'>
+                                        <h2> {{NewRecovered}} </h2>
+                                        <p>  {{"countries.select.stats.new_recov" | translate }} </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm">
+                                    <div class='item'>
+                                        <img src="assets/imgs/header/deth.png" alt='lav img'>
+                                        <h2> {{NewDeaths}} </h2>
+                                        <p>  {{"countries.select.stats.new_death" | translate }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------- end  new stats -->
+                        
+                    
+                        <!------------- start all stats -->
+                        <div class="col-md main_col">
+                            <div class='all row text-center'>
+                                <h4 class="all_new">  {{"countries.select.stats.all" | translate }} </h4>
+                                <i class="fa fa-globe icon"></i>
+                                <div class="col">
+                                    <div class='item'>
+                                        <img src="assets/imgs/header/redvir.png" alt='lav img'>
+                                        <h2> {{TotalConfirmed}} </h2>
+                                        <p>  {{"countries.select.stats.total_conf" | translate }}   </p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class='item'>
+                                        <img src="assets/imgs/header/greenvir.png" alt='lav img'>
+                                        <h2> {{TotalRecovered}} </h2>
+                                        <p>   {{"countries.select.stats.total_recov" | translate }}  </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm">
+                                    <div class='item'>
+                                        <img src="assets/imgs/header/deth.png" alt='lav img'>
+                                        <h2> {{TotalDeaths}} </h2>
+                                        <p>  {{"countries.select.stats.total_death" | translate }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------- end  new stats -->
+                    </div><!-- end main row -->
+                </div><!-- end countainer -->
+            </div>
+            <!--------------------------------------------- end  stats --------->
+            <br>
+            <br>
+            <div class='if_you container'>
+                <h3 *ngIf='!show_table'> <i class="fa fa-info-circle"></i> &nbsp; {{"countries.if_u.h3_one.if" | translate }} <a title="show table" (click)='sh_table()'>  {{"countries.if_u.h3_one.click" | translate }}  </a></h3>
+                <h3 *ngIf='show_table'> <i class="fa fa-info-circle"></i>  &nbsp; {{"countries.if_u.h3_two.if" | translate }}  <a title="hide table" (click)='hid_table()'>  {{"countries.if_u.h3_two.click" | translate }} </a></h3>
+            </div>
+             <!------------------------------------------- start table --------------------->
+            <table *ngIf='show_table'>
+                <thead>
+                    <tr>
+                        <td > {{"countries.table.Country"    | translate }}      </td>
+                        <td>  {{"countries.table.Confirmed"  | translate }}      </td>
+                        <td>  {{"countries.table.Recovered"  | translate }}       </td>
+                        <td>  {{"countries.table.Deaths"     | translate }}       </td>
+                        <td>  {{"countries.table.Active"     | translate }}       </td>
+                        <td>  {{"countries.table.Date"       | translate }}        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let data of alldata; index as i'>
+                        <td class='d-sm-none'> {{data.Country | slice:0:2}}   </td>
+                        <td class='d-none d-sm-block'> {{data.Country}}   </td>
+                        <td> {{data.Confirmed}} </td>
+                        <td> {{data.Recovered}} </td>
+                        <td> {{data.Deaths}}    </td>
+                        <td> {{data.Active}}    </td>
+                        <td> {{data.Date | date }}    </td>
+                    </tr>
+                </tbody>
+            </table> 
+            <!------------------------------------------ end table --------->
+    </section>
+</body> <!------------------------------------------------ end body------------------>

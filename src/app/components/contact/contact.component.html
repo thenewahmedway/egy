@@ -1,0 +1,30 @@
+<div class='contact text-right' dir="rtl" >
+    <form #f='ngForm' (ngSubmit)='login(f)'>
+        <h1> اترك لنا رسالة  </h1>
+        <div class="row"><!-- start  row -->
+            <div class="col-12 col-sm-6"> 
+                <div class="main_div">
+                    <input type="text" name='name' ngModel #name='ngModel' placeholder="الاسم"  required>  
+                    <div class='alert alert-danger' *ngIf='name.touched && name.errors?.required'> * required </div>
+                </div>
+            </div>
+           
+            <div class='col-12 col-sm-6'>
+                <div class="main_div">
+                    <input type="email" name='email' ngModel #mail='ngModel' placeholder="الايميل" email required> 
+                    <div class='alert alert-danger' *ngIf='mail.touched && mail.errors?.required'> * required </div>
+                    <div class='alert alert-danger' *ngIf='mail.touched && mail.errors?.email'>  * this is not email </div>
+                </div>
+            </div>
+
+            <div class='col-12'>
+                <div class="main_div">
+                    <textarea name="textarea" ngModel #textarea='ngModel' placeholder="اكتب رسالتك هنا "></textarea>
+                    <div class='alert alert-danger' *ngIf='textarea.touched && textarea.errors?.required'> * required </div>
+                </div>
+            </div>
+        </div> <!-- end row -->
+
+        <button class='btn btn-primary'> ارسال </button>
+    </form>
+</div>

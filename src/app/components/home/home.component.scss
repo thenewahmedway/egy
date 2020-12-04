@@ -1,0 +1,808 @@
+body{
+    font-family: 'Cairo', sans-serif;
+    overflow: hidden;
+    padding-top: 100px;
+    scroll-behavior: smooth;
+}
+
+
+
+/*************************************** start header *****************/
+header{
+    padding-bottom: 70px;
+    .info{
+        padding: 40px 50px 0 50px;
+        position: relative;
+        z-index: 8;
+        @media(max-width:991px){
+            width:100%;
+            text-align: center;
+        }
+        @media(max-width:1199px){
+            padding: 100px 15px 0 15px;
+        }
+
+        @media(min-width:992px) and (max-width: 1201px){
+            padding-top:40px;
+        }
+        h2{
+            font-family: 'Hind Siliguri', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 56px;
+            @media(max-width:1199px){font-size: 40px; }
+            &:first-of-type{
+                margin-bottom: 0;
+            }
+        }
+        .title{
+            .date{
+                margin-top:50px;
+                font-size: 15px;
+            }
+            .poster{
+                font-weight:bold;
+                text-transform:capitalize;
+                font-size: 25px;
+                color:#E8505B;
+            }
+           
+        }
+        .new{ /// start new status
+            
+            .item{
+                @media(max-width:991px){
+                    margin-top:30px;
+                }
+                text-align: center;
+                img{
+                    width:40px;
+                    height: 40px;
+                }
+                h2{
+                    font-size: 30px;
+                }
+                p{
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    .cont_img{
+        height: 600px;
+        width: 90%;
+        position: relative;
+        @media(max-width:991px){
+            width:100%;
+            margin:1px auto;
+        }
+        @media(max-width:1199px){
+            width:400px;
+            height: 450px;
+            top:30px;
+        }
+        img{
+            width:100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+            left:0;
+        }
+    }
+    .coronaimgs{
+        .small_img{
+            position: absolute;
+            width:50px;
+            height: 50px;
+            top: 381px;
+            left: 78px;
+            z-index: 2;
+            @media(max-width:1200px){
+                top: 295px;
+                left: 72px;
+                width:30px;
+                height: 30px;
+            }
+            img{
+                width:100%;
+                height: 100%;
+                animation: rotate  20s linear infinite;
+            }
+        }
+        .big_img{
+            position: absolute;
+            width:150px;
+            height: 150px;
+            img{
+                width:100%;
+                height: 100%;
+                animation: rotate  28s linear infinite;
+            }
+        }
+        .big_one{
+            top: -7px;
+            left: 333PX;
+            z-index: 0;
+        }
+        .big_two{
+            top: 24px;
+            left: -744px;
+        }
+        .big_three{
+            bottom: -200px;
+            left: -638px;
+        }
+    }
+    .discover{
+        position: relative;
+        top:-40px;
+        @media(max-width: 991px){
+            text-align: center;
+            margin-top:20px;
+            top:0;
+        }
+        a{
+            text-decoration: none;
+            padding:0 60px;
+            font-size: 25px;
+        }
+      
+    }
+}
+/*************************************** end header *****************/
+
+
+
+
+
+/*************************************** start  about *****************/
+.about{
+    padding-top:120px;
+    padding-bottom: 70px;
+    background: #f5efdcb8;
+    border-top-left-radius: 98% 122px;
+    border-top-right-radius: 22% 103px;
+    .cont_img{
+        width:450px;
+        height: 500px;
+        @media(max-width:991px){
+            width:100%;
+            margin:1px auto;
+        }
+        img{
+            width:100%;
+            height: 100%;
+        }
+    }
+    .info{
+        padding:100px 0 0 0;
+        @media(max-width:767px){
+            padding:50px 0 0 0;
+        }
+        h2{
+            font-weight: bold;
+            font-size: 25px;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+            font-family: 'Hind Siliguri', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        p{
+            font-size: 18px;
+            color:#777;
+            @media(max-width:767px){
+                font-size: 14px;
+            }
+
+            &::first-letter{
+                text-transform: capitalize;
+            }
+        }
+        a{
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color:#E8505B
+        }
+    }
+    .lav_img{
+        width:30px;
+        height: 30px;
+        position: absolute;
+        right: 100px;
+        img{
+            width:100%;
+            height: 100%;
+            animation: rotate  28s linear infinite;
+        }
+    }
+
+    /***************start counries  *****************/
+    .countries{
+        .title{
+            position: relative;
+            bottom: -93px;
+            h2{
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+        }
+        .row{
+            background: #fff;
+            padding:40px 0;
+            border-radius: 10px;
+            box-shadow: 6px 4px 17px -4px #8888883d;
+            position: relative;
+            bottom:-150px;
+        
+            .the_col:not(:first-child){
+                .item{
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 1px;
+                        height: 46px;
+                        top: 5px;
+                        left:0;
+                        background: #5555552e;
+                    }
+                }
+            }
+            .the_col:nth-child(2){
+                @media(max-width:767px){
+                    .item{
+                       margin-top: 90px;
+                       img{
+                        top:10px;
+                        left:50%;
+                        margin-left: -35px;
+                    }
+                    }
+                }
+            }
+            .the_col:nth-child(3){
+                @media(max-width:767px){
+                    .item{
+                        &::after{
+                            background: none;
+                        }
+                    }
+                }
+            }
+            .item{
+                img{
+                    width:70px;
+                    height: 70px;
+                    position: absolute;
+                    top:-80px;
+                    left:50%;
+                    margin-left: -35px;
+                }
+                h2{
+                    font-weight: bold;
+                }
+            }
+            .deaths{
+                @media(max-width: 767px){
+                    margin-top:100px;
+                    img{
+                        top:20px;
+                    }
+                }
+            }
+        }
+    }
+    // end countries
+}
+/*************************************** end about **************************/
+
+
+
+
+/*************************************** start Symptoms **************************/
+.symptoms{
+    padding: 180px 0 80px 0;
+    .info{
+        padding:35px 0 0 0;
+        .main_title{
+            p{
+                font-size: 20px;
+                color:#777;
+                line-height: 1.6;
+                text-transform: capitalize;
+                margin-top: 15px;
+                @media(max-width:767px){
+                    font-size: 14px;
+                }
+            }
+        }
+        .symptomsRows{
+            margin-top:30px;
+            h4{
+                color:#777;
+                font-size: 17px;
+                i{
+                    color:#40CD79;
+                }
+                @media(max-width:767px){
+                    font-size: 14px;
+                }
+                /*
+                &::before{
+                    font-family:"Font Awesome 5 Free" ;
+                    font-weight: 900;
+                    content: "\f058";
+                    color:#40CD79;
+                }*/
+            }
+        }
+        button{
+            margin:30px 0 0 0;
+            padding:14px 25px;
+            border-radius: 25px;
+            background:#E8505B;
+            border:2px solid #E8505B;
+            color:#fff;
+            text-transform: capitalize;
+            font-size: 18px;
+            outline: none;
+            cursor: pointer;
+            @media(max-width:991px){padding :9px 20px;}
+            @media(max-width:767px){margin:30px auto;font-size:18px !important;}
+            &:hover{
+                color:#fff;
+                background: none;
+                border:1px solid #222;
+                &::before{
+                    background:#222 !important;
+                }
+            }
+        }
+    }
+    .cont_img{
+        width:450px;
+        height: 500px;
+        position: relative;
+      
+        @media(max-width:1200px){ right:0;}
+        @media(max-width:991px){
+            width:100%;
+            height:100%;
+            margin:1px auto;
+        }
+        img{
+            width:100%;
+            height: 100%;
+        }
+    }
+}
+/*************************************** end Symptoms **************************/
+
+
+
+
+
+
+/*************************************** start product yourself  **************************/
+.protects{
+    padding:100px  0;
+    background: #f5efdcb8;
+    border-top-left-radius: 98% 122px;
+    border-top-right-radius: 22% 103px;
+    position: relative;
+    .lavander{
+        width:120px;
+        height: 120px;
+        position: absolute;
+        left:44px;
+        top: 0;
+        @media(max-width:767px){
+            left: 11px;
+            top: -101px;
+        }
+        img{
+            width:100%;
+            height: 100%;
+            animation: rotate  28s linear infinite;
+        }
+    }
+    .main_title{
+        margin-bottom: 60px;
+    }
+    .mycard{
+        text-align: center;
+        background:#fff;
+        border-radius: 20px;
+        padding:40px 20px;
+        box-shadow: 0px 1px 12px 2px #99999969;
+        transition: all .3s ease-in-out;
+        margin:15px 0;
+        &:hover{
+            transform: translateY(-11px);        }
+        .cont_img{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin:10px auto;
+            img{
+                width:100%;
+                height: 100%;
+            }
+        }
+        h3{
+            margin: 25px 0;
+            font-weight: bold;
+            font-size:25px;
+        }
+        p{
+            font-weight: 500;
+            color:#777;
+            font-size:18px;
+        }
+    }
+}
+/*************************************** end product yourself  **************************/
+
+
+
+
+/*************************************** start product athors  **************************/
+.others{
+    padding:80px 0;
+    @media(max-width:767px){
+        border-top-left-radius: 98% 122px;
+        border-top-right-radius: 22% 103px;
+    }
+    .info{
+        padding-top:150px;
+        .main_title{
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 16px;
+            color:#777;
+            line-height: 1.4;
+            text-transform: capitalize;
+            margin-top: 15px;
+            @media(max-width:767px){
+                font-size: 14px;
+            }
+        }
+        .short_pra{
+            i{
+                color:#40CD79;
+            }
+            &:first-of-type(){
+                margin-top:20px;
+            }
+            /*
+            &::before{
+                font-family:"Font Awesome 5 Free" ;
+                font-weight: 900;
+                content: "\f058";
+                color:#E8505B;
+            }
+            */
+        }
+    }
+    .cont_img{
+        width:500px;
+        height: 550px;
+        @media(max-width:991px){
+            width:100%;
+            height:100%;
+            margin:1px auto;
+        }
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+}
+/***************************************  start product athors  **************************/
+
+
+
+/*************************************** start dieds peoples  **************************/
+.dieds{
+    padding:80px 0;
+    .main_title{
+        margin-bottom: 30px;
+        h2{
+            margin: 2px 0;
+            font-weight: bold;
+        }
+    }
+    .cont_img{
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+}
+/*************************************** end dieds peoples **************************/
+
+
+
+
+
+/*************************************** start wash hand  **************************/
+.wash{
+    padding:80px 0;
+    
+    position: relative;
+    overflow: hidden;
+    background:#0F1621;
+    .col_item{padding:0;}
+    .main_title{
+        position: relative;
+        z-index: 2;
+        margin-bottom: 20px;
+        h2{
+            color:#fff;
+        }
+    }
+    .item{
+        z-index: 2;
+        position: relative;
+        margin-top: 70px;
+        img{
+            width:140px;
+            height: 140px;
+        }
+        h4{
+            font-weight: bold;
+            color:#fff;
+            font-size: 16px;
+            margin-top:20px;
+        }
+        span{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: #E8505B;
+            top: -3px;
+            left: 19%;
+            margin-left: -18px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 35px;
+            color:#fff;
+        }
+    }
+    .overlay{//////////////////start overlay and background imgs 
+        position: absolute;
+        width:100%;
+        height: 100%;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        background:#0F1621;
+        img{
+            bottom: -100px;
+            position: absolute;
+        }
+        .col{
+            position: relative;
+            span{
+                position: absolute;
+                display: block;
+                width: 25px;
+                height: 25px;
+                background: #E8505B;
+                color:#fff;
+                top:0;
+            }
+        }
+        .one img  {  animation: updown 10s 1s linear infinite }
+        .two img  {  animation: updown 10s 3s linear infinite }
+        .three img{  animation: updown 10s 2s linear infinite }
+        .four img {  animation: updown 10s 5s linear infinite }
+        .five img {  animation: updown 10s 7s linear infinite }
+        .six img  {  animation: updown 10s 10s linear infinite }
+        .seven img{  animation: updown 10s 4s linear infinite }
+    }
+}
+/*************************************** end wash hand  **************************/
+
+
+
+/*************************************** start new feed   **************************
+.news_feed{
+    padding: 100px 0;
+    .main_title{
+        margin-bottom: 50px;
+        .alert{
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        h2:first-of-type{
+            margin:0 0 ;
+        }
+    }
+    .mycard{
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 1px 6px -1px #9993;
+        margin:20px 0;
+        overflow: hidden;
+        &:hover{
+            .cont_img{
+                .overlay{
+                    height: 100%;
+                }
+            }
+        }
+        .cont_img{
+            position: relative;
+            img{
+                width:100%;
+                height: 100%;;
+            }
+            .overlay{
+                position: absolute;
+                width:100%;
+                height: 0%;
+                top:0;
+                left:0;
+                background:#e8505b7a;
+                z-index: 2;
+                transition: all .4s ease-in-out;
+            }
+        }
+        .info{
+            padding:40px 20px 20px 20px;
+            a{
+                text-decoration: none;
+                font-size: 18px;
+                @media(max-width:767px){font-size:15px;}
+            }
+            h3{
+                font-size: 30px;
+                font-weight: bold;
+                margin:0 0 15px 0;
+                @media(max-width:767px){font-size:25px;}
+            }
+            h5{
+                margin:15px 0;
+                color:#777;
+                @media(max-width:767px){font-size:18px;}
+                span{
+                    &:last-of-type{
+                        &::before{
+                            content: '';
+                            display: inline-block;
+                            width:1px;
+                            height: 15px;
+                            background: #999;
+                            margin:0 10px;
+                        }
+                    }
+                };
+            }
+            p{
+                color: #777;
+                @media(max-width:767px){font-size:15px;}
+            }
+            button{
+                padding:6px 20px;
+                border-radius:30px;
+                border:2px solid #99999921;
+                background: #fff;
+                font-size: 18px;
+                text-transform: capitalize;
+                font-weight: bold;
+                color:#999999e6;
+                margin:15px 0;
+                outline:none;
+                &:hover{
+                    color:#fff;
+                }
+            }
+        }
+    }
+}
+************************************* end new feed    **************************/
+
+
+
+
+/****************************************************************************/
+/*************************************** start my framwork  *****************/
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes updown{//updown animation 
+    0%{
+        bottom:5%;
+    }
+    50%{
+        bottom:50%;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+.alert{
+    padding: 3px 15px ;
+    background:#ff4f5b17;
+    color:#E8505B;
+    border-radius:16px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.main_button{
+    background: none;
+    margin-top:30px;
+    padding:20px 50px;
+    border-radius: 40px;
+    overflow: hidden;
+    border:2px solid #E8505B;
+    color:#222;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    &:hover{
+        color:#fff;
+        &::before{
+            width: 100%;
+        }
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width:0%;
+        height:100%;
+        top:0;
+        left:0;
+        background:#E8505B;
+        z-index: -1;
+        transition: all .4s ease-in-out;
+    }
+}
+
+
+.main_title{
+    h2{
+        color:#222;
+        font-size: 40px;
+        font-weight:bold;
+        text-transform: capitalize;
+        font-family: 'Hind Siliguri', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Titillium Web', sans-serif;
+        @media(max-width:767px){
+            font-size:30px;
+        }
+        @media(max-width:370px){
+            font-size:23px;
+        }
+    }
+}
+
+.right_en{
+    right:-150px;
+}
+.left_ar{
+    left:-140px;
+}
+/*************************************** end my framwork   *****************/

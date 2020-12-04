@@ -1,0 +1,38 @@
+.main{
+    padding:150px 0 50px 0;
+    background:#f1f1f1ad;
+    .container{
+        .top_title{
+            h1{
+                padding:17px 0;
+                font-size: 35px;
+                font-weight: bold;
+                color:#EB4559;
+                @media(max-width:767px){
+                    font-size: 30px;
+                }
+            }
+        }
+        article{
+            padding:30px;
+            background:#fff;
+            margin-top:60px;
+            @media(max-width:767px){
+                padding:30px 15px;
+            }
+            &:first-of-type{
+                margin-top:100px;
+            }
+            h1{
+                font-size: 25px;
+                color:#0066CC;
+            }
+            p{
+                color:#000;
+                @media(max-width:767px){
+                   font-size:16px;
+                }
+            }
+        }
+    }
+}

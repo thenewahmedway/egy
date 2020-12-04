@@ -1,0 +1,404 @@
+<body dir='{{"home.dir" | translate }}' class='{{"home.textalign" | translate }}'>
+    <!------------------------------------ start  header ---------------->
+    <header>
+        <div class="row">
+            <div class="col-12 col-lg-6 d-lg-none">
+                <div class="cont_img">
+                    <img src='{{"home.header.src_img" | translate }}' alt="persone img">
+                </div>
+                <div class="coronaimgs">
+                    <div class="small_img"> <img src="assets/imgs/header/redvir.png" alt='small corona'>  </div>
+                    <div class="big_img big_one">   <img src="assets/imgs/header/grayvir.png" alt='small corona'> </div>
+                    <div class="big_img big_two">   <img src="assets/imgs/header/grayvir.png" alt='small corona'> </div>
+                    <div class="big_img big_three">   <img src="assets/imgs/header/greenvir.png" alt='small corona'> </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="info">
+                    <span class='alert'> {{"home.header.alert" | translate }}</span>
+                    <h2> {{"home.header.h2_one" | translate }} </h2>
+                    <h2> {{"home.header.h2_two" | translate }} </h2>
+                    <div class='title'>
+                        <h3 class='date'> {{todayDate | date}} </h3>
+                        <h4 class='poster'> {{"home.header.today" | translate }} </h4>
+                        <p class='pra'> {{"home.header.all_world" | translate }} </p>
+                    </div>
+                    <div class='row new'> 
+                        <div class="col-6 col-md">
+                            <div class='item'>
+                                <img src="assets/imgs/header/redvir.png" alt='lav img'>
+                                <h2> {{ newconfirmed}} </h2>
+                                <p> {{"home.header.confirmed" | translate }} </p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md">
+                            <div class='item'>
+                                <img src="assets/imgs/header/greenvir.png" alt='lav img'>
+                                <h2> {{newrecoverd}} </h2>
+                                <p>  {{"home.header.recoverd" | translate }} </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md">
+                            <div class='item'>
+                                <img src="assets/imgs/header/deth.png" alt='lav img'>
+                                <h2> {{newdeaths}} </h2>
+                                <p> {{"home.header.deaths" | translate }} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 d-none d-lg-block">
+                <div class="cont_img">
+                    <img src='{{"home.header.src_img" | translate }}' alt="persone img">
+                </div>
+                <div class="coronaimgs">
+                    <div class="small_img"> <img src="assets/imgs/header/redvir.png" alt='small corona'>  </div>
+                    <div class="big_img big_one">   <img src="assets/imgs/header/grayvir.png" alt='small corona'> </div>
+                    <div class="big_img big_two">   <img src="assets/imgs/header/grayvir.png" alt='small corona'> </div>
+                    <div class="big_img big_three">   <img src="assets/imgs/header/greenvir.png" alt='small corona'> </div>
+                </div>
+            </div>
+        </div>
+        <h1 class='discover'> <a routerLink='countries'>  {{"home.header.descover" | translate }} </a> </h1>
+    </header>
+    <!------------------------------------ end header ---------------->
+    
+
+
+
+    <!------------------------------------ start about  ---------------->
+    <section class="about" id='about'> 
+        <div class="container">
+            <!-- main title-->
+            <div class="main_title text-center">
+                <span class='alert'> {{"home.about.title.about_alert" | translate }} </span>
+                <h2> {{"home.about.title.h2_one" | translate }} </h2>
+            </div>
+            <!-- start row-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="cont_img">
+                        <img src="assets/imgs/about/about-1.png" alt="about img">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="info">
+                        <h2 class='ques'> {{"home.about.info.ques" | translate }} </h2>
+                        <p class='lead'>  {{"home.about.info.lead_one" | translate }} </p>
+                        
+                        <p class="lead"> {{"home.about.info.lead_two" | translate }} </p>
+                        <a class='more' routerLink='aboutcovid'> {{"home.about.info.more" | translate }} </a>
+                        <div class="lav_img">
+                            <img src="assets/imgs/header/lav.png" alt='lav img'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--------------- start countries------------->
+    <div class="container"> 
+        <div class="countries">
+            <div class='title text-center'>
+                <span class="alert">{{"home.about.countries.world_stats" | translate }}</span>
+                <h2>  {{"home.about.countries.all_of" | translate }} </h2>
+            </div>
+            <div class="row text-center">
+                <div class="the_col col-sm-6 col-md">
+                    <div class='item'>
+                        <img src="assets/imgs/header/redvir.png" alt='lav img'>
+                        <h2> {{TotalConfirmed}} </h2>
+                        <p>  {{"home.about.countries.Total_Confirmed" | translate }} </p>
+                    </div>
+                </div>
+
+                <div class="the_col col-sm-6 col-md">
+                    <div class='item'>
+                        <img src="assets/imgs/header/greenvir.png" alt='lav img'>
+                        <h2> {{TotalRecovered}} </h2>
+                        <p>  {{"home.about.countries.TotalRecovered" | translate }} </p>
+                    </div>
+                </div>
+
+                <div class="the_col col-12 col-md">
+                    <div class='item deaths'>
+                        <img src="assets/imgs/header/deth.png" alt='lav img'>
+                        <h2> {{TotalDeaths}} </h2>
+                        <p>  {{"home.about.countries.TotalDeaths" | translate }}  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-------------- end countries --------->
+    <!------------------------------ end about  ------------------------------->
+
+
+  
+    <!------------------------------ start Symptoms  --------------------------->
+    <section class='symptoms'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6  d-lg-none">
+                    <div class="cont_img">
+                        <img src="assets/imgs/Symptoms/symptoms.jpg" alt='lav img'>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="info">
+                        <span class='alert'> {{"home.symptoms.info.alert" | translate }} </span>
+                        <div class="main_title">
+                            <h2> {{"home.symptoms.info.main_title.h2" | translate }} </h2>
+                            <p class='lead'>
+                                {{"home.symptoms.info.main_title.lead" | translate }}                  
+                            </p>
+                        </div>
+                        <div class="row symptomsRows"><!-- small row-->
+                            <div class="col">
+                                <div>
+                                    <h4> <i class="fa fa-check-square"></i>  {{"home.symptoms.info.small_row.Hard_Cough"  | translate }}   </h4>
+                                    <h4> <i class="fa fa-check-square"></i>  {{"home.symptoms.info.small_row.Fever"       | translate }}   </h4>
+                                    <h4> <i class="fa fa-check-square"></i>  {{"home.symptoms.info.small_row.Headache"    | translate }}   </h4>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <h4> <i class="fa fa-check-square"></i> {{"home.symptoms.info.small_row.Resoiratory"   | translate }} </h4>
+                                    <h4> <i class="fa fa-check-square"></i> {{"home.symptoms.info.small_row.Shortness"     | translate }} </h4>
+                                    <h4> <i class="fa fa-check-square"></i> {{"home.symptoms.info.small_row.Kidney"        | translate }}  </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <button class='main_button'> {{"home.symptoms.info.small_row.Check"  | translate }} </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-none d-lg-block" >
+                    <div class="cont_img" class='{{"symptoms.cont_img_style.left" | translate }}'>
+                        <img src="assets/imgs/Symptoms/symptoms.jpg" alt='lav img'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------ end Symptoms  --------------------------->
+
+
+
+
+    <!------------------------------ start product yourserf --------------------------->
+    <section class='protects'>
+        <div class='container'>
+            <div class="lavander"> <img src="assets/imgs/header/lav.png" alt='lav img'> </div>
+            <div class="main_title text-center">
+                <span class='alert'> {{"home.product_yourserf.title.alert"  | translate }} </span>
+                <h2> {{"home.product_yourserf.title.take"  | translate }}  </h2>
+                <h2> {{"home.product_yourserf.title.Yourself"  | translate }}  </h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg">
+                    <div class="mycard">
+                        <div class="cont_img"> <img src="assets/imgs/product/protect-1.png" alt=""> </div>
+                        <h3> {{"home.product_yourserf.mycard_one.h3"  | translate }}</h3>
+                        <p class='lead'>{{"home.product_yourserf.mycard_one.lead"  | translate }} </p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg">
+                    <div class="mycard">
+                        <div class="cont_img"><img src="assets/imgs/product/protect-2.png" alt=""> </div>
+                        <h3> {{"home.product_yourserf.mycard_two.h3"  | translate }}</h3>
+                        <p class='lead '>{{"home.product_yourserf.mycard_two.lead"  | translate }} </p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg">
+                    <div class="mycard">
+                        <div class="cont_img"> <img src="assets/imgs/product/protect-3.png" alt=""> </div> 
+                        <h3> {{"home.product_yourserf.mycard_three.h3"  | translate }} </h3>
+                        <p class='lead '>{{"home.product_yourserf.mycard_three.lead"  | translate }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!------------------------------ end product yourself   --------------------------->
+
+
+
+
+<!------------------------------ start product others   --------------------------->
+    <section class='others'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6  d-lg-none">
+                    <div class="cont_img">
+                        <img src="assets/imgs/others/image-1.webp" alt=""> 
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="info">
+                        <div class="main_title">
+                            <span class='alert'> {{"home.others.title.alert"  | translate }}  </span>
+                            <h2> {{"home.others.title.h2"  | translate }}  </h2>
+                        </div>
+                        <p class="lead"> {{"home.others.lead.lead"  | translate }} </p>
+
+                        <p class="short_pra"> <i class="fa fa-check-square"></i> &nbsp; {{"home.others.short_pra.one"    | translate }} </p>
+                        <p class="short_pra"> <i class="fa fa-check-square"></i> &nbsp; {{"home.others.short_pra.two"    | translate }} </p>
+                        <p class="short_pra"> <i class="fa fa-check-square"></i> &nbsp; {{"home.others.short_pra.three"  | translate }} </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="cont_img">
+                        <img src="assets/imgs/others/image-1.webp" alt=""> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!------------------------------ end product others   --------------------------->
+
+
+
+
+<!------------------------------ start dieds peoples  --------------------------->
+<section class='dieds'>
+    <div class="container">
+        <div class="main_title text-center">
+            <span class='alert'> {{"home.dieds.title.alert"  | translate }} </span>
+            <h2> {{"home.dieds.title.h2_one"  | translate }} </h2>
+            <h2> {{"home.dieds.title.h2_two"  | translate }} </h2>
+        </div>
+        <div class="cont_img">
+            <img src="assets/imgs/dieds/map.webp" alt="">
+        </div>
+    </div>
+</section>
+<!------------------------------ end dieds peoples  --------------------------->
+
+
+
+<!------------------------------ start wash your hand    --------------------------->
+    <div class="wash"> 
+        <div class="container">
+            <div class="main_title text-center">
+                <span class='alert'> {{"home.wash.title.alert"  | translate }} </span>
+                <h2> {{"home.wash.title.h2_one"  | translate }} </h2>
+            </div>
+            <div class="row text-center">
+                <div class="col col-sm-4 col-lg-2">
+                    <div class='item'>
+                        <img src="assets/imgs/wash/hadnwash-1.png" alt='hadnwash-1'>
+                        <h4> {{"home.wash.item_one.h4"  | translate }}</h4>
+                        <span> 1</span>
+                    </div>
+                </div>
+                <div class="col col-sm-4 col-lg-2">
+                    <div class='item'>
+                        <img src="assets/imgs/wash/hadnwash-2.png" alt='hadnwash-1'>
+                        <h4> {{"home.wash.item_two.h4"  | translate }}</h4>
+                        <span> 2 </span>
+                    </div>
+                </div>
+                <div class="col col-sm-4 col-lg-2">
+                    <div class='item'>
+                        <img src="assets/imgs/wash/hadnwash-3.png" alt='hadnwash-1'>
+                        <h4> {{"home.wash.item_three.h4"  | translate }} </h4>
+                        <span> 3</span>
+                    </div>
+                </div>
+                <div class="col col-sm-4 col-lg-2">
+                    <div class='item'>
+                        <img src="assets/imgs/wash/hadnwash-4.png" alt='hadnwash-1'>
+                        <h4> {{"home.wash.item_four.h4"  | translate }}</h4>
+                        <span> 4 </span>
+                    </div>
+                </div>
+                <div class="col col-sm-4 col-lg-2">
+                    <div class='item'>
+                        <img src="assets/imgs/wash/hadnwash-5.png" alt='hadnwash-1'>
+                        <h4> {{"home.wash.item_five.h4"  | translate }} </h4>
+                        <span> 5</span>
+                    </div>
+                </div>
+                <div class="col col-sm-4 col-lg-2">
+                    <div class='item'>
+                        <img src="assets/imgs/wash/hadnwash-6.png" alt='hadnwash-1'>
+                        <h4> {{"home.wash.item_six.h4"  | translate }} </h4>
+                        <span> 6 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay row"><!-------------------------- overlay --> 
+                <div class="col one"><img src="assets/imgs/header/deth.png" alt='lav img'> </div>
+                <div class="col two"><img src="assets/imgs/header/deth.png" alt='lav img'> </div>
+                <div class="col three"><img src="assets/imgs/header/deth.png" alt='lav img'> </div>
+                <div class="col four"><img src="assets/imgs/header/deth.png" alt='lav img'> </div>
+                <div class="col five"><img src="assets/imgs/header/deth.png" alt='lav img'> </div>
+                <div class="col six"><img src="assets/imgs/header/deth.png" alt='lav img'> </div>
+                <div class="col seven"><img src="assets/imgs/header/deth.png" alt='lav img'> </div>
+        </div> 
+    </div>
+<!------------------------------ end wash your hand    --------------------------->
+
+
+<!------------------------------ start news feed    ---------------------------
+<section class='news_feed'>
+    <div class="container">
+        <div class="main_title text-center">
+            <span class="alert"> Our Article </span>
+            <h2> Stay Updated with Our </h2>
+            <h2> News Feed. </h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg">
+                <div class="mycard">
+                    <div class="cont_img"> <img src="assets/imgs/feeds/1.webp" alt='lav img'>  <div class="overlay"> </div></div>
+                    <div class="info">
+                        <a href="#" class ='alert'> Featured  </a>
+                        <h3> Economic Policies for The COVID-19  </h3>
+                        <h5> <span> By admin </span> <span> May 05, 2020 </span></h5>
+                        <p class="lead">Podcasting operational change management workflows to establish framework… </p>
+                        <button class='main_button'> read more </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg">
+                <div class="mycard">
+                    <div class="cont_img"> <img src="assets/imgs/feeds/2.webp" alt='lav img'> <div class="overlay"> </div></div>
+                    <div class="info">
+                        <a href="#" class ='alert'> Featured  </a>
+                        <h3> Some Countries Provide Clear </h3>
+                        <h5> <span> By admin </span> <span> May 05, 2020 </span></h5>
+                        <p class="lead">Podcasting operational change management workflows to establish framework… </p>
+                        <button class='main_button'> read more </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg">
+                <div class="mycard">
+                    <div class="cont_img"> <img src="assets/imgs/feeds/3.webp" alt='lav img'> <div class="overlay"> </div></div>
+                    <div class="info">
+                        <a href="#" class ='alert'> Featured  </a>
+                        <h3> Maintaining Banking System Safly </h3>
+                        <h5> <span> By admin </span> <span> May 05, 2020 </span></h5>
+                        <p class="lead">Podcasting operational change management workflows to establish framework… </p>
+                        <button class='main_button'> read more </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+--------------------------- end  news feed   --------------------------->
+
+</body><!--- end body-->
+
+
+

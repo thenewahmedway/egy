@@ -1,0 +1,336 @@
+
+/********************* start call doctors ********/
+.call_doctor{
+    margin-top:50px;
+    background:#fff;
+    padding: 50px 20px;
+    position: relative;
+    bottom: -50px;
+    z-index: 9;
+    border-radius: 5px;
+    box-shadow: -4px 11px 23px 3px #999999a6;
+    @media(max-width:450px){  padding: 30px 15px;}
+    .main_title{
+        h2{
+            font-size: 32px;
+            margin-top:30px;
+            @media(max-width:450px){  font-size: 25px;}
+        }
+    }
+    .buttons{
+        margin-top:15px;
+        @media(max-width:530px){ text-align:center;}
+        @media(max-width:991px){margin:10px auto; }
+        button{
+            display:inline-block;
+            padding:16px 30px;
+            border-radius:30px;
+            border:2px solid #FF4F5B;
+            font-size: 18px;
+            margin:15px 20px;
+            outline: none;
+            @media(max-width:530px){
+                padding:15px !important;
+                font-size:13px;
+                margin: 7px;
+                border-radius:21px;
+            }
+            @media(max-width:1199px){padding:16px 25px;}
+        }
+        .one{
+            background:#FF4F5B;
+            color:#fff;
+            border:1px solid #E8505B;
+            &:hover{
+                color:#fff;
+                background: none;
+                border:1px solid #222;
+                &::before{
+                    background:#222 !important;
+                }
+            }
+        }
+        .two{
+            color:#FF4F5B;
+            
+            &:hover{
+                color:#fff;
+                background: none;
+                &::before{
+                    background:#FF4F5B;
+                }
+            }
+        }
+    }
+}
+/********************* end call doctors ********/
+
+
+/*************************************** start footer  **************************/
+footer{
+    position: relative;
+    padding:140px 0 50px 0;
+    background:#f7f2e2;
+    border-top-left-radius: 98% 122px;
+    border-top-right-radius: 22% 103px;
+    @media(max-width:767px){
+        padding:140px 0 50px 0;
+    }
+    .item{
+        position: relative;
+        z-index: 2;
+        margin:20px 0;
+        .email{text-transform: none;}
+        h2,h4{
+            font-weight: bold;
+            margin-bottom: 20px;;
+        }
+
+        p{
+            color:#777;
+            text-transform: capitalize;
+            font-size: 17px;
+            line-height: 1.5;
+            
+        }
+
+        ul{
+            li{
+                margin:15px 0;
+                color:#777;
+                font-size: 16px;
+                transition: all .5s ease-in-out;
+                &:hover{
+                    color:#E8505B;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        p{
+            a{
+                text-decoration: none;
+                color:#777;
+                transition: all .5s ease-in-out;
+                &:hover{
+                    color:#E8505B;
+                }
+            }
+        }
+
+        .social{
+            margin-top:30px;
+            a{
+                display:inline-block;
+                margin:0 15px;
+                border-radius:50%;
+                width:40px;
+                height:40px;
+                text-align-last: center;
+                line-height: 40px;
+                transition: all .5s ease-in-out;
+                position: relative;
+                &:hover{
+                    span{
+                        display: block !important;
+                        animation: topbottom .5s ease-in-out;
+                    }
+                }
+                &:first-of-type { span{ left: -40%; }}
+                &:nth-of-type(2){ span{ left: -20%; }}
+                &:nth-of-type(3){ span{ left: -47%; }}
+                &:last-of-type  { span{ left: -30%; }}
+                span{
+                    position: absolute;
+                    top:-37px;
+                    padding: 0 7px;
+                    line-height: 29px;
+                    height: 29px;
+                    color:#E8505B;
+                    background:#f1e3df;
+                    border-radius: 5px;
+                    display: none;
+                    &::after{
+                        content:'';
+                        position: absolute;
+                        border-top:6px solid #f1e3df;
+                        border-right:6px solid transparent;
+                        border-left:6px solid transparent;
+                        left: 41%;
+                        bottom: -6px;
+                    }
+                }
+                i{
+                    display: inline-block;
+                    width:42px;
+                    height: 42px;
+                    line-height: 42px;
+                    text-align: center;
+                    color:#E8505B;
+                    background:#f1e3df;
+                    margin-right: 20px;
+                    margin-top:5px;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    cursor: pointer;
+                    &:hover{
+                        color:#f1e3df;
+                        background:#E8505B;
+                    }
+                }
+            }
+        }
+    }
+    .overlay{//////////////////start overlay and background imgs 
+        position: absolute;
+        width:100%;
+        height: 100%;
+        top:0;
+        left:0;
+        background:#f7f2e2;
+        .item{
+            img{animation: rotate 20s linear infinite;}
+        }
+        .one{
+            position: relative;
+            top: 142px;
+            z-index: 0;
+            left: 148px;
+            opacity: .2;
+            img{
+                width:100px;
+                height: 100px;
+            }
+        }
+        .two{
+            position: relative;
+            top: 60px;
+            z-index: 0;
+            left: 319px;
+            opacity: 0.1;
+            img{
+                width:200px;
+                height: 200px;
+                @media(max-width:767px){
+                    position: relative;
+                    left: -430px;
+                    top: 297px;
+                }
+            }
+        }
+    }
+}
+/*************************************** end footer  **************************/
+
+/******************start copyright *********/
+.copy{
+    background: #555;
+    margin-bottom: 0;
+    position: relative;
+    padding:10px;
+    
+    h4{
+        margin: 20px ;
+        font-size: 17px;
+        color:#fff;
+        i{
+            color:#E8505B;
+        }
+        a{
+            color:#FF4F5B;
+            font-size: 17px;
+        }
+    }
+}
+/******************end copyright *********/
+
+
+/****************************************************************************/
+/*************************************** start my framwork  *****************/
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes updown{//updown animation 
+    0%{
+        bottom:5%;
+    }
+    50%{
+        bottom:50%;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+@keyframes topbottom {
+    0%{
+        top:-34px;
+    }
+    50%{
+        top:-41px;
+    }
+    100%{
+        top:-36px;
+    }
+}
+.alert{
+    padding: 3px 15px ;
+    background:#ff4f5b17;
+    color:#E8505B;
+    border-radius:16px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.main_button{
+    background: none;
+    margin-top:30px;
+    padding:20px 50px;
+    border-radius: 40px;
+    overflow: hidden;
+    border:2px solid #E8505B;
+    color:#222;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    &:hover{
+        color:#fff;
+        &::before{
+            width: 100%;
+        }
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width:0%;
+        height:100%;
+        top:0;
+        left:0;
+        background:#E8505B;
+        z-index: -1;
+        transition: all .4s ease-in-out;
+    }
+}
+
+
+.main_title{
+    h2{
+        color:#222;
+        font-size: 40px;
+        font-weight:bold;
+        text-transform: capitalize;
+        font-family: 'Hind Siliguri', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Titillium Web', sans-serif;
+    }
+}
+/*************************************** end my framwork   *****************/

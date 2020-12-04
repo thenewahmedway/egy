@@ -1,0 +1,31 @@
+/********************************* start scroll to top  *****************/
+
+.to_top{
+    position: fixed;
+    right:10px;
+    bottom:100px;
+    width:30px;
+    height:30px;
+    text-align: center;
+    line-height:30px;
+    z-index: 9999;
+    animation: totop 2s ease-in-out infinite;
+    cursor: pointer;
+
+    i{
+        font-size:35px;
+        color:#E8505B;
+    }
+}
+@keyframes totop{
+    0%{
+        bottom:100px;
+    }
+    5%{
+        bottom:105px;
+    }
+    100%{
+        bottom:100px;
+    }
+}
+/********************************* end scroll to top    *****************/

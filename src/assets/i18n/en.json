@@ -1,0 +1,392 @@
+{
+  "home":{
+        "dir":"ltr",
+        "textalign":"text-left",
+        "header":{
+                "src_img":"assets/imgs/header/persone_en.webp",
+                "alert":"becarful",
+                "h2_one":"save yourself",
+                "h2_two":"save the world",
+                "today":" Today's new stats",
+                "all_world":"All of the world",
+                "confirmed":"confirmed ",
+                "recoverd":"recoverd ",
+                "deaths":"deaths ",
+                "descover":"discover your country"
+        },
+
+        "about":{
+                "title":{
+                    "about_alert":"about corona",
+                    "h2_one":"Corona Disease (COVID-19)",
+                    "h2_two":"Outbreak Situation"
+                },
+                "info":{
+                    "ques":" what is corona coronavirus? ",
+                    "lead_one":"coronavirus disease (COVID-19) is an infectious disease caused by a new virus. The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing.",
+                    "lead_two":"cou can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) distances with who are unwell.",
+                    "more":"more"
+                },
+                "countries":{
+                    "world_stats":"world statistic",
+                    "all_of":"all of the world",
+                    "Total_Confirmed":"Total Confirmed",
+                    "TotalRecovered":"Total Recovered",
+                    "TotalDeaths":"Total Deaths"
+                }
+        },
+
+        "symptoms":{
+               "cont_img_style":{
+                   "left":"right_en"
+               },
+               "info":{
+                   "alert":"Covid-19 Symptoms",
+                   "main_title":{
+                       "h2":"what are the symptoms?",
+                       "lead":"COVID-19 symptoms range from mild to severe. It takes 2-14 days after exposure for symptoms to develop. Symptoms may include:"
+                   },
+                   "small_row":{
+                       "Hard_Cough":"Hard Cough",
+                       "Fever":"Fever",
+                       "Headache":"Headache",
+                       "Resoiratory":"Resoiratory Distress",
+                       "Shortness":"Shortness of Breath",
+                       "Kidney":"Kidney Failure",
+                       "Check":"Check Symptoms"
+                   }
+               }
+        },
+
+        "product_yourserf":{
+                "title":{
+                    "alert":"How To Protect",
+                    "take":"Take Steps To Protect",
+                    "Yourself":"Yourself"
+                },
+                "mycard_one":{
+                    "h3":" Wear A Face Mask",
+                    "lead":"We can help each other to protect others from exposure if you are ill or if you are pregnant."
+                },
+                "mycard_two":{
+                    "h3":" Cleaning hands",
+                    "lead":"Clean your hands by rubbing them with an alcohol product; Alcohol is the preferred method of cleansing."
+                },
+                "mycard_three":{
+                    "h3":" Social spacing",
+                    "lead":"Keep at least a distance away from the arm from others, and reduce clusters"
+                }
+        },
+
+        "others":{
+            "title":{
+                "alert":"How To Protect Ourselves And Others",
+                "h2":" Stay informed and follow advice given by your healthcare provider"
+            },
+            "lead":{
+                "lead":"Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus."
+            },
+            "short_pra":{
+                "one":"Share the latest facts & avoid hyperbole",
+                "two":"Show solidarity with affected people",
+                "three":"Tell the stories of people who have exper "
+            }
+        },
+
+        "dieds":{
+            "title":{
+                "alert":"Died For Covid-19",
+                "h2_one":"More Than 700k Died in",
+                "h2_two":"the world "
+            }
+        },
+
+        "wash":{
+            "title":{
+                "alert":"Wash Your Hands",
+                "h2_one":"How to Wash Your Hand Properly"
+            },
+            "item_one":{
+                "h4":"Soap on Hand",
+                "span":"1"
+            },
+            "item_two":{
+                "h4":"Palm to Palm",
+                "span":"2"
+            },
+            "item_three":{
+                "h4":"Between Fingers",
+                "span":"3"
+            },
+            "item_four":{
+                "h4":"Back of The Hands",
+                "span":"4"
+            },
+            "item_five":{
+                "h4":"Clean with Water",
+                "span":"5"
+            },
+            "item_six":{
+                "h4":"Use Towel to Dry",
+                "span":"6"
+            }
+        }
+    },
+
+
+
+    "nav":{
+        "covid":"Egycovid",
+        "home":"home",
+        "countries":"countries",
+        "about":"about Covid-19",
+        "privacy":"privacy",
+        "contactus":"contact us"
+    },
+
+
+
+
+    "footer":{
+        "call_doctor":{
+            "h2":"Want To Book A Doctor or Test COVID-19? ",
+            "buttons":{
+                "book":"book a doctor",
+                "test":"test covid-19"
+            }
+        },
+        "items":{
+            "one":{
+                "covid":"Covid 19",
+                "lead":"The best way to prevent and slow down transmission is be well informed about the COVID-19 virus. Protect yourself and others from infec- tion by washing your hands."
+            },
+            "two":{
+                "h4":"About us ",
+                "ul":{
+                    "one":"About",
+                    "two":" Our Team ",
+                    "three":"Prevention",
+                    "four":"Faq",
+                    "five":"Contact"
+                }
+            },
+            "three":{
+                "h4":"Usefull Links",
+                "ul":{
+                    "one":"Situation Reports ",
+                    "two":"Advice For Public ",
+                    "three":"Corona Sympt",
+                    "four":" Donor & Partners",
+                    "five":"Corona Spread"
+                } 
+            },
+            "four":{
+                "ul":{
+                    "About":"Contact Us",
+                    "OurTeam":"Ministry of Health Egypt",
+                    "Prevention":{
+                        "phone":"phone",
+                        "num":"0100 93 18 297"
+                    }, 
+                    "mail":{
+                        "Email":"Email",
+                        "is":"ahossamw@gmail.com"
+                    }
+                },
+                "social":{
+                    "facebook":"facebook",
+                    "twitter":"twitter",
+                    "instagram":"instagram"
+                }
+            }
+        }
+    },
+
+
+
+
+    "copy":{
+        "h4":"All copy right",
+        "span":"Are Received",
+        "a":"Egycovid"
+    },
+
+
+
+    "countries":{
+        "header":{
+            "info":{
+                "alert":"Countries",
+                "h2":"Corona Covid-19 Tracker Country Wice ",
+                "lead_one":"coronavirus disease (COVID-19) is an infectious",
+                "lead_two":" disease caused by a new virus.",
+                "button":"discover your country"
+            }
+        },
+
+        "select":{
+            "info":{
+                "alert":"countries",
+                "h2":"select your country",
+                "data":"eg"
+            },
+            "stats":{
+                "new":"New",
+                "all":"All",
+                "new_conf":" New Confirmed ",
+                "new_recov":"New Recovered",
+                "new_death":"New Deaths",
+                "total_conf":" Total Confirmed ",
+                "total_recov":"Total Recovered",
+                "total_death":"Total Deaths"
+            }
+        },
+
+        "if_u":{
+            "h3_one":{
+                "if":" if you want to show the table of all stats in this country",
+                "click":"click here"
+            },
+            "h3_two":{
+                "if":" to hide  the table ",
+                "click":"click here"
+            }
+        },
+        
+
+        "table":{
+            "Country":"Country",
+            "Confirmed":"Confirmed",
+            "Recovered":"Recovered",
+            "Deaths":"Deaths",
+            "Active":"Active",
+            "Date":"Date"
+        }
+    },
+
+
+
+
+
+    
+   "aboutcovid":{
+        "top_title":{
+            "h1":"What you should know about the emerging coronavirus disease (COVID-19)",
+            "p":"We asked our experts about the facts that can help answer the fundamental questions that will be on the minds of citizens. Below you will find information about this virus, what is being done to prevent its spread, and how you can protect yourself from the threat of infection."
+        },
+        "article_one":{
+            "h1":"What are corona viruses?",
+            "p":"Coronaviruses are a large group of viruses that can infect animals and humans alike, causing respiratory illnesses, whether they are mild such as the common cold or severe such as pneumonia. Animal corona viruses rarely infect humans and then spread among them. And you may remember SARS (severe acute respiratory syndrome), which spread between 2002-2003, and which is an example of a corona virus that was transmitted from animals to humans. Another prominent modern Corona virus called MERS (Middle East Respiratory Syndrome) appeared in the Middle East in 2012, and scientists say that it initially passed from a camel to a human."
+        },
+        "article_two":{
+            "h1":"How does the Corona virus spread?",
+            "p":"The virus is spread between people usually through direct contact with an infected person. The virus can also be spread by touching an infected surface and then the mouth, nose or eyes, although this is not believed to be the primary method of transmission."
+        },
+        "article_three":{
+            "h1":"How can it help people prevent the spread of disease?",
+            "p":"The Centers for Disease Control and Prevention (CDC) recommends following good personal hygiene practices, including washing hands frequently, drinking fluids frequently, covering your nose and mouth with a tissue or your elbow when coughing, and staying home if you feel sick. In addition, even when you are not ill, we recommend that you stay home unless you need to go out in a necessary way, practice spatial distancing (staying at least six feet away from others) and wear a mask that covers your nose and mouth."
+        },
+        "article_four":{
+            "h1":"How can it help people prevent the spread of disease?",
+            "ul":{
+                "li_one":"Fever or chills",
+                "li_two":"headache",
+                "li_three":"Cough, sore throat, nasal congestion or runny nose",
+                "li_four":"New loss of sense of taste or smell",
+                "li_five":"Shortness of breath and difficulty breathing",
+                "li_six":"Nausea, vomiting or diarrhea",
+                "li_seven":"Fatigue, muscle or body aches"
+            }
+        },
+        "article_five":{
+            "h1":"Can Covid-19 disease be treated?",
+            "p":"There is no vaccine for this virus; Since it is a virus, antibiotics will not work for it. Without any specific treatment available, health care providers generally treat symptoms and help the patient feel more comfortable."
+        },
+        "article_six":{
+            "h1":"Should I wear a mask on my baby?",
+            "p":"No, this should not be done. The recommendation from the Centers for Disease Control and Prevention in California and Los Angeles County to wear a cloth face covering whenever a person goes out into public places comes with one exception - children under two years old. The main reason, says Michael Smit, MD, an infectious disease doctor at Children's Hospital Los Angeles, is the possibility that the mask could cause breathing difficulties for young children. In addition, the inability of children to express distress or to remove the mask on their own can put them at risk of suffocation."
+        },
+        "article_seven":{
+            "h1":"What is a long-term Covid?",
+            "p":"There is no exact medical definition of this phenomenon, or any specific list of symptoms that sufferers suffer from, as two people with long-term COVID-19 can experience completely different experiences. But the most common common factor is the constant feeling of extreme fatigue, and other symptoms that sufferers may suffer from are: shortness of breath, persistent cough, pain in the joints and muscles, problems with hearing and vision, headache, loss of sense of smell and taste, in addition to damage to the heart, lungs, kidneys and intestines. Affected persons may suffer from psychological problems, including depression, anxiety, and difficulties with thinking. It is possible that these symptoms combine to destroy the lives of those who suffer from them. For example, says Jade Gray Christie, who suffers from this disease, I have never told a feeling of exhaustion as I feel today. Long-term Covid is not just a period of recovery for a patient after being in the intensive care ward for a while. Even those who develop a mild form of the disease may still face serious and long-term problems. Professor David Strain, from the University of Exeter in southern England who follows in the chronic fatigue syndrome clinic run by patients with this phenomenon, says: We have no doubt about the existence of a long-term Covid phenomenon."
+        },
+        "article_eight":{
+            "h1":"How many of the injured suffer from this phenomenon?",
+            "p":"A study conducted in the largest hospital in the Italian capital, Rome, and its results were published in the Journal of the American Medical Association, tracked 143 injured cases after they were discharged. The study showed that 87 percent of those were still suffering from at least one symptom, about two months after their discharge from hospital, while half of them complained of fatigue. But these studies focus on the minority who end up needing hospital treatment. By analyzing the results contained in the Covid Tracker App, which is used by about 4 million people in Britain, it was found that 12 percent of those infected with Covid-19 are still suffering from symptoms after 30 days. Obtaining it through the app - which has not yet been published - indicates that 1 in 50 sufferers experience symptoms after 90 days."
+        },
+        "article_nine":{
+            "h1":"Is it necessary for the infection to be severe for a patient to have a long-term covid?",
+            "p":"Half of the participants in a study conducted in the Irish capital Dublin said that they still feel exhausted 10 weeks after their infection with the Coronavirus, and a third of them said that they could not return to work because of the severity of exhaustion they feel. It is inferred that there is any relationship between the severity of infection with the virus and the exhaustion that sufferers continue to feel. But it is necessary to note that fatigue is not a symptom of long-term Covid. Professor Chris Breitling at the University of Leicester, who heads a project to track the identity of people with Covid-19, believes that Those who contract pneumonia due to their infection with the Coronavirus are more likely to contract long-term covid due to the damage to their lungs How does the virus cause long-term covid? There are many ideas and propositions, but there are no specific answers to this question, as it may be due to the virus remaining in small pockets despite its disappearance from most parts of the body.",
+            "p2":"Professor Tim Spector at King's College London says that if the patient complains of long-term diarrhea, then you will find the virus in his intestine, and if he complains of a loss of smell, then the virus is still present in his nerves, it is possible that the survival of the virus is the basis of the problem. Coronavirus infects a wide range of cells in the body, which results in a strong immune response that in turn causes damage to the entire body. Some experts believe that the immune system does not return to its normal state after infection with Covid, and that this is the cause of the illness that many infected people feel after As they recover, infection with the virus may lead to changes in the functioning of various body systems, and this is clearly visible in the lungs if they become damaged. Long-term problems have already been seen in people with SARS and MERS, which are also caused by corona viruses, but Covid may also cause changes in the metabolism process, as there have been cases in which some people face great difficulties in controlling their blood sugar levels after they have had diabetes. As a result of their infection with Covid, SARS caused changes in the way the body represents fat that lasted for at least 12 years. There are initial indications of changes in the structure of the brain, but this topic is still subject to research. Covid 19 also causes strange changes in the blood, including Changes in coagulation and damage to blood vessels. Professor Straine told the BBC the theory that I am working on is that the small blood vessels that deliver oxygen and nutrients to different body tissues may age before their time. But he warns that unless we find the true cause of long-term Covid, it will be difficult to find an effective treatment for it."
+        },
+        "article_ten":{
+            "h1":"Are injured people cured?",
+            "p":"It seems that the number of people with long-term covid is decreasing with the passage of time, but the virus did not appear for the first time until late 2019, before spreading to all parts of the world early this year, and therefore there are no long-term figures. I have followed the injured for 25 years, and I certainly hope that the sufferers will not continue to suffer from symptoms for more than one year, but I may be wrong. But there are concerns that although the injured people now seem to recover, they may face risks throughout their lives. For those who have had fatigue syndrome Chronic diseases may be infected again, and there are fears that future infections with Covid may also lead to an increase in those suffering from long-term Covid. And Professor Strain said if long-term Covid continues its current course, I expect many of the injured to recover, but if Another strain of the Corona virus has spread, and we will see this phenomenon spread every winter season. Other problems may arise in the future."
+        },
+        "article_eleven":{
+            "h1":"What should I do if I think I have long-term COVID-19?",
+            "p":"The health insurance system in Britain developed an action plan for recovery from Covid that includes advice and instructions specifically directed to those who need treatment in the hospital. The action plan recommends following three tips in order for the patient to preserve his energy, namely:",
+            "ul":{
+                "li_one":"Don't exert too much, and make sure you get enough rest.",
+                "li_two":"Plan your day so that the activities most in need of effort are distributed over the days of the week.",
+                "li_three":"Think about your priorities, what activities you should do and what activities you can do without."
+            }
+        }
+   },
+
+
+
+   "privacy":{
+    "article_one":{
+        "h1":"We appreciate your interest and your concerns about the privacy of your data on the Internet",
+        "p":"This policy has been prepared to help you understand the nature of the data that we collect from you when you visit our website, and how we deal with this personal data"
+    },
+    "article_two":{
+         "h1":"Browsing",
+         "p":"We did not design this site in order to collect your personal data from your computer while you browse this site, but only the data provided by you will be used with your knowledge and of your own free will."
+     },
+     "article_three":{
+         "h1":"Internet Protocol (IP) address",
+         "p":"Anytime you visit any website, including this site, the host server records your Internet Protocol (IP) address, the date and time of the visit, the type of Internet browser you use, and the URL of any website that refers you to this site. On the web."
+     },
+     "article_four":{
+         "h1":"Network scans",
+         "p":"The surveys that we do directly on the network enable us to collect specific data, such as the data required of you regarding your view and feeling towards our site, your responses are of utmost importance, and our appreciation as it enables us to improve the level of our site, and you have full freedom and choice in providing data related to your name. And other data."
+     },
+     "article_five":{
+         "h1":"Links to other sites on the Internet",
+         "p":"Our site may contain links to other sites on the Internet. Or advertisements from other sites such as Google AdSense, and we are not responsible for the methods of data collection by those sites. You can view the privacy policies and the contents of those sites that are accessed through any link within this site.",
+         "p2":"We may use advertising companies for third parties to display ads, when you visit our website. These companies have the right to use information about your visits to this site and other websites (except for name, address, email address or phone number), in order to provide advertisements about the goods and services that interest you. If you would like more information on this matter, and also if you would like to know your options to prevent this information from being used by these companies, please let us know by sending an email to ahossamw@gmail.com"
+     },
+     "article_six":{
+         "h1":"Disclosure of information",
+         "p":"We will maintain at all times the privacy and confidentiality of the personal data we obtain. This information will not be disclosed unless it is required by any law, or when we believe in good faith that such action will be required or desirable to comply with the law, or to defend or protect the property rights of this site or the beneficiaries of it."
+     },
+     "article_seven":{
+         "h1":"Data necessary to carry out the transactions requested by you",
+         "p":"When we need any of your data, we will ask you to provide it of your own free will. As this information will help us in contacting you and carrying out your requests, wherever we are. The data provided by you will never be sold to any third party for the purpose of marketing it for his own benefit without obtaining your prior and written consent, unless this is done on the basis that it is within collective data used for statistical purposes and research without including any data that can be used to identify you."
+     },
+     "article_eight":{
+         "h1":"When you call us",
+         "p":"All data provided by you will be treated as confidential. The forms that are submitted directly on the network require providing data that will help us improve our site. The data provided by you will be used in responding to all your inquiries, comments and requests by this site."
+     },
+     "article_nine":{
+         "h1":"Disclosure of information to any third party",
+         "p":"We will not sell, trade, rent or disclose any information for the benefit of any third party outside this site, and the information will be disclosed only if an order is issued to do so by any judicial or regulatory authority."
+     },
+     "article_ten":{
+         "h1":"Amendments to the policy of confidentiality and privacy of information",
+         "p":"We reserve the right to amend the terms and conditions of the confidentiality policy and the privacy of information if necessary and when appropriate. Amendments will be implemented here, and you will be continuously notified of the data that we have obtained, how we will use it and who will provide it with this data."
+     },
+     "article_eleven":{
+         "h1":"Contact us",
+         "p":"You can contact us when needed by clicking on the link available August top of the site."
+     },
+     "article_tewelve":{
+        "h1":"finally",
+        "p":"Your concerns and concerns about the confidentiality and privacy of data is a very important issue for us. We hope this will be achieved through this policy."
+    }
+}
+
+   
+}
