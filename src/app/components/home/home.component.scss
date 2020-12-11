@@ -144,6 +144,9 @@ header{
             margin-top:20px;
             top:0;
         }
+        @media(min-width:992px) and (max-width:1200px){
+            margin-top:35px;
+        }
         a{
             text-decoration: none;
             padding:0 60px;
@@ -239,7 +242,7 @@ header{
             position: relative;
             bottom:-150px;
         
-            .the_col:not(:first-child){
+            .the_col:not(:last-of-type){
                 .item{
                     &::after{
                         content: "";
