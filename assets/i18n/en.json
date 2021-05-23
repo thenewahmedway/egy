@@ -7,6 +7,7 @@
                 "alert":"becarful",
                 "h2_one":"save yourself",
                 "h2_two":"save the world",
+                "Vaccine":"Click here to book the vaccine from the Ministry of Health",
                 "today":" Today's new stats",
                 "all_world":"All of the world",
                 "confirmed":"confirmed ",
@@ -141,7 +142,7 @@
         "countries":"countries",
         "about":"about Covid-19",
         "privacy":"privacy",
-        "contactus":"contact us"
+        "contactus":"Reserve the vaccine"
     },
 
 
@@ -151,8 +152,7 @@
         "call_doctor":{
             "h2":"Want To Book A Doctor or Test COVID-19? ",
             "buttons":{
-                "book":"book a doctor",
-                "test":"test covid-19"
+                "book":"Reserve the vaccine from the Ministry of Health"
             }
         },
         "items":{
