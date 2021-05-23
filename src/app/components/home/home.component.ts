@@ -26,10 +26,10 @@ export class HomeComponent implements OnInit {
 
   constructor(private ser:CoronaService) { }
   ngOnInit(): void {
-    this.ser.summary().subscribe(data =>{
+    this.ser.Alldata().subscribe(data =>{
       let date=data.Date;
       this.todayDate=date;
-      //start new statistic
+      //start total statistic
       let global=data.Global;
       let TotalConfirmed=global.TotalConfirmed;
       let TotalDeaths=global.TotalDeaths;

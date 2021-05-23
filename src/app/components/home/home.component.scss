@@ -38,6 +38,27 @@ header{
                 margin-bottom: 0;
             }
         }
+
+        .Vaccine{
+            a{
+                border: 1px solid #81beff;
+                border-radius: 19px;
+                outline: none;
+                display: block;
+                padding: 10px;
+                width: 350px;
+                text-align: center;
+                background: #689ed8 !important;
+                color:#f1f1f1;
+                @media(max-width:767px){
+                    width: 330px;
+                    margin: 0 auto;
+                }
+                &:hover{
+                    background: #235992 !important;
+                }
+            }
+        }
         .title{
             .date{
                 margin-top:50px;

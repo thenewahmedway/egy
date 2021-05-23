@@ -8,7 +8,7 @@ import { CoronaService } from 'src/app/services/corona.service';
 })
 
 export class CountriesComponent implements OnInit {
-  data: string[] = [  ];
+  data: string[] = [];
   countryName='';
   countryCode='';
   //allcountries:any[];  // لو هعمل سليكت بوكس عادي واعمل لوب علييهم 
@@ -30,7 +30,7 @@ todayDate;
 
   constructor(private ser:CoronaService) { }
     ngOnInit(): void {
-      this.ser.summary().subscribe(data =>{
+      this.ser.Alldata().subscribe(data =>{
         let date=data.Date;
         this.todayDate=date;
         //console.log(data);
@@ -43,11 +43,11 @@ todayDate;
     }
 
 
-    //start function 
+    //start function  d
     countryname(country){ //from </> function
       this.countryName=country; // send it to var to get it in the test loop
       this.show_img=true;//show img
-      this.ser.summary().subscribe(data =>{
+      this.ser.Alldata().subscribe(data =>{
         let countries=data.Countries //get countries only   
         console.log(countries);
         
@@ -66,7 +66,7 @@ todayDate;
         }
       })
       //show detalis data in the table form alldata() function
-      this.ser.Alldata(country).subscribe(data =>{
+      this.ser.dayone(country).subscribe(data =>{
       this.alldata=data; //send to alldata variable to show it in the table
         /* old way to show last stats 
         let index=data.length -1;// to get last index    

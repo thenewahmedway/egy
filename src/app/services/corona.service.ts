@@ -8,13 +8,13 @@ import { Observable, from } from 'rxjs';
 export class CoronaService {
   constructor(private http:HttpClient) { }
   
-  summary():Observable<any>{  // all of night
+  Alldata():Observable<any>{  // all of data
     let url= "https://api.covid19api.com/summary";
-    return this.http.get<any>(url)
+    return this.http.get<any>(url)  
   }
 
   
-  Alldata(country):Observable<any>{
+  dayone(country):Observable<any>{   //for dayone of country 
     let url= "https://api.covid19api.com/total/dayone/country/"+country;
     return this.http.get<any>(url); 
   }
